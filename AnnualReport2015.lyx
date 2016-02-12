@@ -119,16 +119,6 @@ The proposed method for a search for an Electric Dipole Moment of charged
 
 .
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF
-\end_layout
-
-\end_inset
-
-
 \begin_inset Newline newline
 \end_inset
 
@@ -138,26 +128,6 @@ For the polarization measurement, nuclear scattering which uses spin-dependent
  A vertical polarization is associated with a left-right asymmetry in the
  scattering cross section while a longitudinal polarization leads to a up-down
  asymmetry.
- A quantity to characterize the statistical accuracy of a polarimeter is
- the so called Figure of Merit (FOM) it is defined as
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\mathcal{F}=\sigma\cdot A_{y}^{2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This means in order to maximize the statistical accuracy of a polarimeter,
- one has to choose a process with the highest possible cross section and
- analyzing power.
- 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -165,7 +135,55 @@ Polarimeter design goals
 \end_layout
 
 \begin_layout Standard
+To achieve the necessary precision, the EDM polarimeter should achieve the
+ following goals:
+\end_layout
 
+\begin_layout Itemize
+Large statistical figure of merit
+\end_layout
+
+\begin_layout Itemize
+Minimal influence on the beam 
+\end_layout
+
+\begin_layout Itemize
+High sensitivity to systematic effects
+\end_layout
+
+\begin_layout Itemize
+Good long term stability and reproducibility
+\end_layout
+
+\begin_layout Itemize
+Simple concept
+\end_layout
+
+\begin_layout Standard
+The statistical figure of merit of a polarimeter is defined as 
+\begin_inset Formula $\mathcal{F}=\sigma\cdot A_{y}^{2}$
+\end_inset
+
+ which means to maximize the statistical accuracy of a polarimeter one has
+ to simply choose the process with the highest possible cross section and
+ analyzing power.
+ The influence on the beam should be minimal to none because even the slightest
+ pertubation can influence the beam on a noticeable level.
+ In the past it has been demonstrated that it is possible to control the
+ systematic uncertainties to the 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+ level by calibration of the detector by inducing large errors in the beam
+ and measuring the variation of the output 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brantjes201249"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -173,9 +191,9 @@ Target material
 \end_layout
 
 \begin_layout Standard
-Different target materials where evaluated for their applicability as a
- polarimetry target.
- The most probable candidate is Carbon.
+Different target materials have been evaluated for their applicability as
+ a polarimetry target.
+ Carbon has been chosen as the most suitable candidate.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -192,18 +210,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Neue plots
-\end_layout
-
-\end_inset
-
-
 \begin_inset Graphics
-	filename ../../Documents/AnnualReport2015/FOM.pdf
+	filename FOM.pdf
 	width 100col%
 
 \end_inset
@@ -238,7 +246,6 @@ key "PhysRevC.37.544"
 \end_inset
 
 .
- Note the different scale.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:top:-Differential-FOM"
@@ -255,9 +262,11 @@ name "fig:top:-Differential-FOM"
 
 \end_inset
 
- As one can clearly see, the differential Figure of Merit for the dC and
- pC scattering is heavily concentrated in the forward direction.
- This 
+ As one can clearly see, the differential Figure of Merit for both the deuteron-
+carbon and proton-carbon scattering is heavily concentrated in the forward
+ direction.
+ This should allow to use the same polarimeter for both proton and deuteron
+ EDM measurements.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -266,8 +275,8 @@ Target type
 
 \begin_layout Standard
 In principle, many different target types are available for use.
- Solid State Targets in general are easier to handle than cluster targets
- and target densities in the order of magnitude of 
+ Solid State Targets in general are easier to handle than cluster and gas
+ targets and target densities in the order of magnitude of 
 \begin_inset Formula $10^{20}\,\textrm{cm}^{-2}$
 \end_inset
 
@@ -281,14 +290,209 @@ In principle, many different target types are available for use.
 \end_inset
 
 .
- ^
+ The target currently used for R&D measurements is a carbon slab with several
+ cm in thickness.
+ For extraction the beam is placed close to the target and then heated by
+ application of white noise 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.115.094801"
+
+\end_inset
+
+.
+ Recently, a research has begun to develop a new type of target that uses
+ small diamond pellets to continuosly extract the beam without needing external
+ electrical fields 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jedi"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
-Detector technologies
+Detector concept
 \end_layout
 
 \begin_layout Standard
+The current candidate concept is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:detector-concept"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename DetectorSketch.pdf
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The current 
+\noun on
+Jedi 
+\noun default
+candidate detector concept.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:detector-concept"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ It envisions a segmented plastic scintillator to measure the direction
+ of the outgoing particles and a fast hadronic calorimeter to stop the particles
+ and provide a accurate energy measurent of the particle to select only
+ elastically scattered particles.
+ The material currently under evalution is the anorganic scintillator LYSO
+ 
+\begin_inset Formula $\mathrm{Lu_{1.8}Y_{0.2}\mathrm{SiO_{2}}}(\mathrm{Ce})$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ranges"
+
+\end_inset
+
+ shows the range and lateral displacement of an incoming deuteron beam in
+ 
+\noun on
+LYSO 
+\noun default
+for different deuteron energies.
+ As can be seen, a crystal of around 
+\begin_inset Formula $100\,\mathrm{mm}$
+\end_inset
+
+ length and 
+\begin_inset Formula $10\,\mathrm{mm}-30\,\mathrm{mm}$
+\end_inset
+
+ width is able to completely absorb an incoming deuteron beam.
+ Accordingly, LYSO crystals of the sizes 
+\begin_inset Formula $30\times30\times100\,\mathrm{mm^{3}}$
+\end_inset
+
+ and 
+\begin_inset Formula $15\times30\times100\,\mathrm{mm^{3}}$
+\end_inset
+
+ have been ordered and are unter investigation.
+ Hardware tests with cosmic muons have demonstrated an energy of 
+\begin_inset Formula $\mathcal{O}(20\%)$
+\end_inset
+
+ are achievable 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "christiandz"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename lyso-range.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename lyso-x.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+top: Range of deuterons in LYSO for different deuteron energies.
+ bottom: The same for the lateral displacement.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ranges"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+A detector concept has been chosen and Monte-Carlo simulations and prototype
+ measurements are ongoing to further refine the components for the polarimeter.
+ First test measurements with deuterons are planned for the March 2016 beam
+ time.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Formula $^{a}\textrm{RWTH Aachen University, Germany}$
 \end_inset
 
@@ -310,7 +514,7 @@ Detector technologies
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "../EDM"
+bibfiles "/Users/pmaanen/Documents/EDM"
 options "phiaea"
 
 \end_inset

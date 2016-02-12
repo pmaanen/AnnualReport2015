@@ -1,0 +1,322 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ikpar
+\begin_preamble
+%\usepackage{draftwatermark}
+%\SetWatermarkScale{3.5}
+%\usepackage{lineno}
+%\linenumbers
+\end_preamble
+\use_default_options true
+\begin_modules
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Polarimeter concepts for the EDM precursor experiment
+\end_layout
+
+\begin_layout Author
+\begin_inset Formula $\textrm{P. Maanen{}^{a}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{J. Pretz}^{a,b}$
+\end_inset
+
+ for the JEDI Collaboration
+\end_layout
+
+\begin_layout Standard
+The proposed method for a search for an Electric Dipole Moment of charged
+ particles consists of storing the particles in a storage ring and letting
+ the charged particles interact with a radial electric field.
+ Starting with a horizontally polarized beam, the EDM signal would be a
+ vertical polarization build-up.
+ If the EDMs of deuteron and proton are in the order of 
+\begin_inset Formula $10^{-29}\textrm{e\cdot cm}$
+\end_inset
+
+, the polarization build-up due to the EDM is in the order of 
+\begin_inset Formula $\textrm{nrad/s}$
+\end_inset
+
+.
+ Assuming a horizontal polarization lifetime of 
+\begin_inset Formula $1000\,\textrm{s}$
+\end_inset
+
+, this means the vertical polarization to be detected is in the order of
+ 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+For the polarization measurement, nuclear scattering which uses spin-dependent
+ asymmetries in the nuclear scattering cross section to measure the beam
+ polarization was chosen.
+ A vertical polarization is associated with a left-right asymmetry in the
+ scattering cross section while a longitudinal polarization leads to a up-down
+ asymmetry.
+ A quantity to characterize the statistical accuracy of a polarimeter is
+ the so called Figure of Merit (FOM) it is defined as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{F}=\sigma\cdot A_{y}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means in order to maximize the statistical accuracy of a polarimeter,
+ one has to choose a process with the highest possible cross section and
+ analyzing power.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Polarimeter design goals
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsubsection*
+Target material
+\end_layout
+
+\begin_layout Standard
+Different target materials where evaluated for their applicability as a
+ polarimetry target.
+ The most probable candidate is Carbon.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:top:-Differential-FOM"
+
+\end_inset
+
+ the differential FOM for Deuteron-Carbon and Proton-Carbon elastic scattering
+ are shown.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Neue plots
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../Documents/AnnualReport2015/FOM.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+red: Differential FOM for Deuteron-Carbon scattering at 
+\begin_inset Formula $T_{d}=\textrm{270\,\ MeV}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Satou2002307"
+
+\end_inset
+
+ blue: The same quantity for Proton-Carbon scattering at 
+\begin_inset Formula $T_{p}=250\,\mathrm{MeV}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.37.544"
+
+\end_inset
+
+.
+ Note the different scale.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:top:-Differential-FOM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ As one can clearly see, the differential Figure of Merit for the dC and
+ pC scattering is heavily concentrated in the forward direction.
+ This 
+\end_layout
+
+\begin_layout Subsubsection*
+Target type
+\end_layout
+
+\begin_layout Standard
+In principle, many different target types are available for use.
+ Solid State Targets in general are easier to handle than cluster targets
+ and target densities in the order of magnitude of 
+\begin_inset Formula $10^{20}\,\textrm{cm}^{-2}$
+\end_inset
+
+ are easily achievable.
+ Cluster targets can achieve target densities of up to 
+\begin_inset Formula $10^{14}\,\mathrm{cm}^{-2}$
+\end_inset
+
+ - 
+\begin_inset Formula $10^{15}\,\mathrm{cm}^{-2}$
+\end_inset
+
+.
+ ^
+\end_layout
+
+\begin_layout Subsubsection*
+Detector technologies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $^{a}\textrm{RWTH Aachen University, Germany}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{b}\textrm{IKP FZJ Germany}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../EDM"
+options "phiaea"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

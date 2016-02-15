@@ -86,10 +86,6 @@ A candidate layout for the JEDI polarimeter
 \begin_inset Formula $\textrm{P. Maanen{}^{a}}$
 \end_inset
 
- and 
-\begin_inset Formula $\textrm{J. Pretz}^{a,b}$
-\end_inset
-
  for the JEDI Collaboration
 \end_layout
 
@@ -126,8 +122,8 @@ For the polarization measurement, nuclear scattering which uses spin-dependent
  asymmetries in the nuclear scattering cross section to measure the beam
  polarization was chosen.
  A vertical polarization is associated with a left-right asymmetry in the
- scattering cross section while a longitudinal polarization leads to a up-down
- asymmetry.
+ scattering cross section while a longitudinal polarization leads to an
+ up-down asymmetry.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -167,7 +163,7 @@ The statistical figure of merit of a polarimeter is defined as
  which means to maximize the statistical accuracy of a polarimeter one has
  to simply choose the process with the highest possible cross section and
  analyzing power.
- The influence on the beam should be minimal to none because even the slightest
+ The influence on the beam should be minimal because even the slightest
  pertubation can influence the beam on a noticeable level.
  In the past it has been demonstrated that it is possible to control the
  systematic uncertainties to the 
@@ -207,7 +203,7 @@ reference "fig:top:-Differential-FOM"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -265,7 +261,7 @@ name "fig:top:-Differential-FOM"
  As one can clearly see, the differential Figure of Merit for both the deuteron-
 carbon and proton-carbon scattering is heavily concentrated in the forward
  direction.
- This should allow to use the same polarimeter for both proton and deuteron
+ This should allow one to use the same polarimeter for both proton and deuteron
  EDM measurements.
 \end_layout
 
@@ -378,9 +374,9 @@ name "fig:detector-concept"
 \end_inset
 
 .
- 
+ Figure 
 \begin_inset CommandInset ref
-LatexCommand formatted
+LatexCommand ref
 reference "fig:ranges"
 
 \end_inset
@@ -428,7 +424,7 @@ key "christiandz"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -454,8 +450,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-top: Range of deuterons in LYSO for different deuteron energies.
- bottom: The same for the lateral displacement.
+top: Range of deuterons in LYSO for different deuteron kinetic energies.
+ bottom: Average displacement in x-direction of deuterons for the same energies.
  
 \begin_inset CommandInset label
 LatexCommand label
